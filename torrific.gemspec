@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["arefaslani@gmail.com"]
   spec.summary       = %q{Change tor identity}
   spec.description   = %q{A wrapper on tor gem for changing tor identity from the command line.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/arefaslani/torrific"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
