@@ -1,6 +1,8 @@
 # Torrific
 
-A wrapper to 'tor' gem for change Tor identity from the command line
+A wrapper to 'tor' gem for change Tor identity from the command line.
+For this program to work correctly, Tor cli should be installed and the
+ControlPort part of the torrc file should be uncommented.
 
 ## Installation
 
