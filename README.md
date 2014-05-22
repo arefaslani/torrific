@@ -1,6 +1,8 @@
 # Torrific
 
-A wrapper to 'tor' gem for change Tor identity from the command line
+A wrapper to 'tor' gem for change Tor identity from the command line.
+For this program to work correctly, Tor cli should be installed and the
+ControlPort part of the torrc file should be uncommented.
 
 ## Installation
 
@@ -22,9 +24,9 @@ torrific [options]
 
 ### Options
 
-* host: Tor control host
-* port: Tor control port
-* password: Tor control authentication password
+* host: Tor control host(default is 127.0.0.1)
+* port: Tor control port(default is 9051)
+* password: Tor control authentication password(default is empty)
 
 ## Contributing
 
