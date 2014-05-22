@@ -1,6 +1,6 @@
 # Torrific
 
-TODO: Write a gem description
+A wrapper to 'tor' gem for change Tor identity from the command line
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+torrific [options]
+
+### Options
+
+* host: Tor control host
+* port: Tor control port
+* password: Tor control authentication password
 
 ## Contributing
 
