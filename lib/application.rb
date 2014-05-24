@@ -4,9 +4,11 @@ require 'torrific'
 module Torrific
   class Application
     class << self
-      attr_accessor :password, :port, :host, :interval, :tor_controller
+      attr_accessor :password, :port, :host, :interval, :daemonize, :tor_controller
       def run
         self.parse_options
+        
+        Process.daemon if self.daemonize
 
         trap('SIGINT') do
           puts "Bye Bye!"
@@ -47,6 +49,10 @@ module Torrific
           opts.on("--interval INT",
                    "Changes identity each INT seconds.(default is only once)") do |seconds|
             self.interval = seconds.to_i
+          end
+
+          opts.on("-d", "Daemonize the process") do
+            self.daemonize = true
           end
         end
 
