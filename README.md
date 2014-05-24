@@ -27,6 +27,8 @@ torrific [options]
 * host: Tor control host(default is 127.0.0.1)
 * port: Tor control port(default is 9051)
 * password: Tor control authentication password(default is empty)
+* d(daemonize): Daemonize the process.
+* interval: Set interval for the process.
 
 ## Contributing
 
