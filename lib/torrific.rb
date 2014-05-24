@@ -12,6 +12,7 @@ module Torrific
 
     # changes the tor identity
     def change_ip
+      self.connect
       self.authenticate self.password
       send_command(:signal, 'NEWNYM')
       self.close
